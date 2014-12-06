@@ -5,7 +5,7 @@ library (cgdsr)
 mycgds = CGDS("http://www.cbioportal.org/public-portal/")
 cancerStudies= getCancerStudies(mycgds)
 studies<- cancerStudies[,1]
-#create a subset of a small number of studies (acute myloid lukemia, kidney and lung cancers)
+#create a subset of a small number of studies (acute myeloid leukemia, kidney and lung cancers)
 studies1<- c("laml_tcga_pub", "laml_tcga", "blca_tcga_pub", "blca_tcga", 
              "kirc_tcga_pub", "kirc_tcga", "luad_tcga_pub", 
              "luad_tcga")
